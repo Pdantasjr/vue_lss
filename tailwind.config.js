@@ -23,6 +23,9 @@ module.exports = {
       spacing: {
         lineBurger: '6px',
         underline: '2px',
+        'bannerContent-xm': '350px',
+        'bannerContent-sm': '450px',
+        'bannerContent-md': '600px',
       },
       screens: {
         'xm': '320px'
