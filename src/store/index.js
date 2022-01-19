@@ -5,11 +5,16 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    toggle: ''
   },
   mutations: {
+    toggleNav(state, payload) {
+      state.toggle = payload
+    }
   },
-  actions: {
-  },
-  modules: {
+  getters: {
+    toggleSidebarClass: state => {
+      return state.toggle
+    },
   }
 })
